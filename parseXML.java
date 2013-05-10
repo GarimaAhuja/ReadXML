@@ -90,9 +90,12 @@ public class parseXML
 						currLevelNodes.add(root);
 						while(currLevelNodes.get(0).getLevel()!=(level-1))
 						{
-							if(currLevelNodes.get(0).leftChild.getAttribute()!="Target")
+							if(!currLevelNodes.get(0).leftChild.getAttribute().equals("Target"))
 							{
 								currLevelNodes.add(currLevelNodes.get(0).leftChild);
+							}
+							if(!currLevelNodes.get(0).rightChild.getAttribute().equals("Target"))
+							{
 								currLevelNodes.add(currLevelNodes.get(0).rightChild);
 							}
 							currLevelNodes.remove(0);
@@ -130,5 +133,6 @@ public class parseXML
 			}
 			level++;
 		}
+		root.print();
 	}
 }
