@@ -1,0 +1,27 @@
+<node attribute="H" value="3.16">
+
+<node attribute="Hmax%" value="21.46">
+
+<node attribute="Target" value="0.00">
+
+</node>
+
+<node attribute="Target" value="1.00">
+
+</node>
+
+</node>
+
+<node attribute="Favg%" value="0.24">
+
+<node attribute="Target" value="0.00">
+
+</node>
+
+<node attribute="Target" value="1.00">
+
+</node>
+
+</node>
+
+</node>
